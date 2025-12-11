@@ -90,3 +90,4 @@ def plot_token_distribution(token_counts, name=""):
 results_sp = analyze_tokenizer_with_compression(sp, lines, name="SentencePiece BPE_KAZ")
 results_mt5 = analyze_tokenizer_with_compression(mt5_tokenizer, lines, name="mT5 Стандартный")
 results_minilm = analyze_tokenizer_with_compression(minilm_tokenizer, lines, name="MiniLM Стандартный")
+
