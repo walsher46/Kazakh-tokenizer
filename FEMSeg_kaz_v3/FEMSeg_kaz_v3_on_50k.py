@@ -351,4 +351,5 @@ for epoch in range(1, num_epochs + 1):
     torch.save(model.state_dict(), ckpt_path)
     print("[main] checkpoint saved:", ckpt_path)
 
+
 print("Обучение завершено.")
