@@ -19,3 +19,13 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+## License and Data Availability
+
+### Software
+All source code and preprocessing scripts in this repository are released under the **MIT License** and are provided for research and reproducibility purposes.
+
+### Data
+
+The datasets used in this project are distributed under the **Creative Commons Attribution 4.0 International (CC BY 4.0)** license.
+
