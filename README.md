@@ -63,7 +63,7 @@ All of this is written in the program text, written in Python.
 
 ## 2.5 The program text contains comments describing the program's steps. 
   For example:
-  # Paths and preparation of the 10k corpus# -----------------------------
+  # Paths and preparation of the 10k corpus# -------------
     BASE_DIR = "/content/drive/MyDrive/KAZ_MORPH"
     os.makedirs(BASE_DIR, exist_ok=True)
 
