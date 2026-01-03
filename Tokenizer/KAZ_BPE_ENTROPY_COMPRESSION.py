@@ -4,18 +4,16 @@ from tqdm import tqdm
 import sentencepiece as spm
 from transformers import MT5Tokenizer, AutoTokenizer
 
-#   ИСХОДНЫЙ ДАТАСЕТ -  СЕГМЕНТИРОВАННЫЙ ТЕКСТ STEM+АФФИКСЫ
-
 # Пути
-corpus_path = "/content/drive/MyDrive/KAZAKH_BPE/segmented_2.txt"
+corpus_path = "/content/drive/MyDrive/KAZAKH_BPE/chunk_099.txt"
 spm_model_path = "/content/drive/MyDrive/KAZAKH_BPE/kazakh_bpe.model"
 
 
 # Загрузка корпуса
 #with open(corpus_path, "r", encoding="utf-8") as f:
     #lines = f.readlines()
-#!mv /content/drive/MyDrive/KAZAKH_BPE/qazaq_synthetic_qa.csv /content/drive/MyDrive/KAZAKH_BPE/qazaq_synthetic_qa.txt
-file_path = "/content/drive/MyDrive/KAZAKH_BPE/segmented_2.txt"
+!mv /content/drive/MyDrive/KAZAKH_BPE/qazaq_synthetic_qa.csv /content/drive/MyDrive/KAZAKH_BPE/qazaq_synthetic_qa.txt
+file_path = "/content/drive/MyDrive/KAZAKH_BPE/chunk_099.txt"
 with open(file_path, "r", encoding="utf-8") as f:
     lines = f.readlines()  # Список строк
 
@@ -119,6 +117,8 @@ minilm_tokenized = [token for line in lines for token in minilm_tokenizer.tokeni
 plot_token_distribution(Counter(sp_tokenized), name="SentencePiece BPE")
 plot_token_distribution(Counter(mt5_tokenized), name="mT5 Стандартный")
 plot_token_distribution(Counter(minilm_tokenized), name="MiniLM Стандартный")
+
+
 
 
 
