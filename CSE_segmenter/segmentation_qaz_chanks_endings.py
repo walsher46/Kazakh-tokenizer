@@ -211,8 +211,8 @@ with open(stopwords_file_name, "r", encoding="utf-8") as f:
     #print(stop_words)
 
 
-input_path = "kaz_285000_only_284707.txt"
-output_dir = "segmented_qaz_284707"
+input_path = "chunk_099.txt"
+output_dir = "segmented_chunk_099"
 chunk_size = 5000
 
 
